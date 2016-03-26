@@ -5,11 +5,17 @@
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-route.min.js"></script>
   <script type="text/javascript" src="/assets/scripts/app.js"></script>
   <title>Movie App</title>
-
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 </head>
 <body>
+  <ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="/">Home</a></li>
+    <li role="presentation"><a href="/home">Movies</a></li>
+    <li role="presentation"><a href="/pics">Pictures</a></li>
+  </ul>
+
   <h1>Anyone remember Movie Phone?</h1>
-  <p>Let's go <a href="/home">home...</a></p>
+
   <div ng-view></div>
 </body>
 </html>
