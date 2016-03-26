@@ -1,1 +1,8 @@
+<h3>Search for a movie</h3>
+<input type="text" ng-change="getMovies()">
+
 <h2>Here's the movie Info!</h2>
+<!-- need an ng-model for ng-repeat to work -->
+<div ng-repeat="movie in movies">
+  {{movie.title}}
+</div>
